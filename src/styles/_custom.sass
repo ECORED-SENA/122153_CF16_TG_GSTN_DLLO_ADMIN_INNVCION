@@ -1,32 +1,282 @@
 .banner-principal-decorativo
+  
   &-1
-    animation: float1 3.5s ease-in-out infinite alternate
-    position: absolute
-    top: 20%
-    right: 10%
+    width: 461px
+    animation: rotation 8s infinite linear
+    position: rela
+    bottom: 4%
+    right: -3%
+  &-5   
+    width: 478px
+    top: 12%
+    right: -12%
+    
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 20%
+    right: 7%
+  &-3
+    animation: float1 2.5s ease-in-out infinite alternate
+    position: absolute
+    top: 64%
+    right: 60%
+  &-4
+   
+    animation: float1 3.5s ease-in-out infinite alternate
+    position: absolute
+    top: 20%
+    right: 63%
+  
+    
+
+.banner-principal__img
+  z-index: 1
+
+
+@-webkit-keyframes rotation 
+  from 
+    -webkit-transform: rotate(0deg)  
+  to 
+    -webkit-transform: rotate(359deg)
 
 @keyframes float1
   0%
     transform: translateY(20px)
+
   100%
     transform: translateY(0px)
-  
-.banner-principal .tarjeta
-  background-position: left 50% !important
 
-.banner-principal__row .banner-principal__img
-  width: 400px !important  
+@keyframes float2
+  0%
+    transform: translateX(20px)
 
-.titulo-principal.color-acento-contenido .titulo-principal__numero span
-  color: white !important
+  100%
+    transform: translateX(0px)
 
-.banner-interno__titulo__icono i
-  color: $color-primario
+@keyframes scale
+  0%
+    transform: scale(1)
+
+  100%
+    transform: scale(1.2)
+
+
+
+
+.bloque-texto-g__texto 
+  position: relative
+  width: 65%
+  background-color: rgba(255, 255, 255, 0.9)
+
 
 figcaption
-  font-weight: normal
+  border-top: 10px solid #12263F
+
+.colorverde
+  background: #D5E9C0
+
+.tabs-a__tab 
+  background: #E8E8E8
+
+.tarjeta.color-yellow
+  background: #F1F5AC
+
+.tarjeta--yellow
+  background: #FAFCE1
+
+.cajon.color-primario.verde
+  background-color: #EDF6E4
+
+
+
+.tarjeta--amarilla-1
+  background-color: #EAF086
+
+
+.tarjeta--yellow1
+ background-color: #EAF086
+
+.tarjeta.color-acento-botones.verde
+  background-color: #ACD382
+  color: #12263F
+
+.tarjeta.color-acento-botones.amarillo
+  background-color: #EAF086
+
+.color-dowload
+  background-color: #D5E9C0
+
+.lista-ul__vineta:before
+  color: #F85316
+
+
+.dimensionimg
+  margin-top: 100px
+
+
+.acordion__accion__btn--a
+  background-color: #DCE736
+
+.tarjeta.color-acento-botones.yellowpt
+  background-color: #F8FAD6
+  border: 3px solid #DCE736
+
+.tarjeta.color-acento-botones.morado
+  background-color: #CBCCDF
+  border: 3px solid #AAADD9
+
+.tarjeta--coloramarillo
+  background-color: #F6F6F6
+
+
+.acordion__activo 
+  background-color: #FCFDEA
+
+.bloque-texto-g__texto2
+  right: 150px    
+  background-color: rgba(255, 255, 255, 0.8)
+  position: sticky
+  width: 60%
+
+
+///////// Card hover --------------------------------------
+.crd_hover_txt
+  position: relative  
+  padding: 0 !important
+  overflow: hidden !important  
+  &:hover    
+    .crd_hover_txt--body   
+      transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) 
+      transform: translateY(0)
+
+  .crd_hover_txt--body
+    position: absolute
+    padding: 1.5rem
+    bottom: 0    
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1)
+    transform: translateY(calc( 100% - 3.85rem ))
+    background-color: rgba(255, 247, 230, 1) 
+  
+  @media (min-width:1200px) and (max-width:1400px)  
+    .crd_hover_txt--body
+      p
+        font-size: 0.85em
+
+.crd_hover_txt .crd_hover_txt--body
+    background-color: #DCE736
+
+.tarjeta--amarillo
+  background-color: #FAFCE1
+
+
+.slyder-a__tipo-b .slyder-a__btn--atrs 
+  background-color: #DCE736
+.slyder-a__tipo-b .slyder-a__btn--sigt
+  background-color: #DCE736
+
+
+
+.slyder-a__bullets__item--active 
+  background-color: #3E4BBF
+  border-color: #3E4BBF
+
+.cajon.color-acento-botones 
+    background-color: #FEE9E0
+
+.lista-ol--cuadro__vineta 
+  min-width: 19px
+  height: 18px
+
+.textmargin
+  margin-top: -6px
+
+
+.tarjeta-avatar
+  width: 100px
+  height: 200px
+@media (max-width:100px)  
+  .tarjeta-avatar
+    width: 300px
+    height: 788px
+.tarjeta-avatar .tarjeta
+  height: 102%
+  width: 220px
+.tarjeta-avatar > img 
+  left: 118%
+   
+.lista-ol li, .lista-ol--cuadro li, .lista-ul li, .lista-ul--separador li, .lista-ul--color li 
+  margin-bottom: 0px
+
+
+.align-time-line
+  text-align: initial
+
+
+/* AB */
+.lista-ul.morado i
+  color: #3D46C2
+.cuadrado i
+  font-size: 18px
+  color: #3D46C2
+  padding-bottom: 4px
+.bg-gray
+  background-color: #F6F6F6
+.color-naranja i
+  color: #C6412A !important
+
+.bloque-texto-a.color-primario.bg-gray
+  background-color: #F6F6F6
+
+.tema1-2 .tarjeta
+  height: 390px
+.tema1-2 img 
+  width: 125px
+  margin: 0 auto
+
+.tarjeta-avatar.tema-1 
+  width: 100%
+  height: 100%
+.tarjeta-avatar.tema-1 .tarjeta
+  display: inline-block
+  padding-top: 60px !important
+  height: 100%
+  width: 100%
+.tarjeta-avatar.tema-1 > img
+  position: absolute
+  left: 50%
+  width: 125px
+
+@media (min-width:$bp-min-xl) and (max-width:$bp-max-xl)  
+  .banner-principal-decorativo-5
+    width: 445px
+    top: 7%
+    right: -3%
+  .banner-principal-decorativo-1 
+    width: 435px
+    bottom: 4%
+    right: 5%
+  .banner-principal-decorativo-4
+    top: 16%
+    right: 75%
+
+
+.tabs-c__tab--active
+  font-weight: bold  
+
+
+
+// 2026
+figcaption
+  font-weight: normal !important
+.fa-lista
+  li
+    display: flex !important
+    align-items: flex-start
+  li:before
+    position: relative
+    margin-right: 7px
+    font-size: 1.4rem 
+.tabs-a__tab__text
+  white-space: normal
+  overflow-wrap: break-word
